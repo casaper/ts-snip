@@ -14,7 +14,7 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "jest",
-    "lint": "eslint -f unix --cache '**/*.{ts,js}'"
+    "lint": "eslint -f unix --cache './src/**/*.ts'"
   },
   "dependencies": {
     "tslib": "^2.4.0",
