@@ -1,0 +1,50 @@
+{
+  "name": "ts-snip",
+  "description": "Collection of TypeScript snippets and documentation. Something like you don't need Lodash or so, but with a TypeScript focus.",
+  "keywords": [
+    "snippets",
+    "documentation",
+    "functions",
+    "TypeScript"
+  ],
+  "author": "Kaspar V. (https://github.com/casaper)",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": "github:casaper/ts-snip",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint -f unix --cache '**/*.{ts,js}'"
+  },
+  "dependencies": {
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.5",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/jest": "^28.1.4",
+    "@types/prettier": "^2.6.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "@typescript-eslint/typescript-estree": "^5.30.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-tsdoc": "^0.2.16",
+    "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
+    "prettier": "^2.7.1",
+    "prettier-plugin-sh": "^0.12.4",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1"
+  },
+  "engines": {
+    "node": ">=16 <17",
+    "pnpm": ">=7"
+  },
+  "engineStrict": true
+}
