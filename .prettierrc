@@ -12,7 +12,8 @@
     {
       "files": "*.ts",
       "options": {
-        "parser": "typescript"
+        "parser": "typescript",
+        "trailingComma": "all"
       }
     },
     {

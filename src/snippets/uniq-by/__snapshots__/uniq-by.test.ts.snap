@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`uniqBy uniqBy "a" 1`] = `
+Array [
+  Object {
+    "a": 1,
+    "b": 1,
+  },
+  Object {
+    "a": 2,
+    "b": 1,
+  },
+  Object {
+    "c": 2,
+    "d": 1,
+  },
+  Object {
+    "c": 1,
+    "d": 1,
+  },
+]
+`;
+
+exports[`uniqBy uniqBy "b" 1`] = `
+Array [
+  Object {
+    "a": 1,
+    "b": 1,
+  },
+  Object {
+    "c": 2,
+    "d": 1,
+  },
+  Object {
+    "c": 1,
+    "d": 1,
+  },
+]
+`;

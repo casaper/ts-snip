@@ -18,7 +18,7 @@
  * Given to me by [claudiocro](https://github.com/claudiocro)
  */
 export function notNil<TValue>(
-  value: TValue | null | undefined
+  value: TValue | null | undefined,
 ): value is TValue {
   return value !== null && value !== undefined;
 }

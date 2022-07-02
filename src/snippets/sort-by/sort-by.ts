@@ -1,5 +1,3 @@
-import { isNullUndefined } from '../is-null-undefined/is-null-undefined.fn';
-
 /**
  * Sort array of objects by key
  *
@@ -7,24 +5,19 @@ import { isNullUndefined } from '../is-null-undefined/is-null-undefined.fn';
  */
 export function sortBy<T extends Record<string, unknown>, K extends keyof T>(
   collection: T[],
-  key: K
+  key: K,
 ): T[] {
-  return collection.concat().sort((a, b) => {
-    if (
-      !(key in a) ||
-      !(key in b) ||
-      isNullUndefined(a[key]) ||
-      isNullUndefined(b[key])
-    ) {
-      return 0;
-    }
-    if (typeof a[key] !== typeof b[key]) {
-      return String(a[key]) > String(b[key])
-        ? 1
-        : String(b[key]) > String(a[key])
-        ? -1
-        : 0;
-    }
-    return a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0;
-  });
+  return collection
+    .filter(item => key in item)
+    .sort((a, b) => {
+      if (typeof a[key] !== typeof b[key]) {
+        return String(a[key]) > String(b[key])
+          ? 1
+          : String(b[key]) > String(a[key])
+          ? -1
+          : 0;
+      }
+      return a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0;
+    })
+    .concat(collection.filter(item => !(key in item)));
 }
