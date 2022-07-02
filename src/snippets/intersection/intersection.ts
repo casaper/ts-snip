@@ -15,7 +15,7 @@
  * 
  * [Playground Link](https://www.typescriptlang.org/play?ssl=12&ssc=16&pln=8&pc=11#code/GYVwdgxgLglg9mABDMUCmAnAzm68wA8AKgHwAUwM2UAghhgIYCeAXIkQNoC6ANIgHSCGGAOZY2nLtwCUE7ogDeAKESIMaKCAxJK1Ooyb9KAG3QYyMdAFtEAXhKJhY-mgBumJmWEY7D7-xQIYxAAEzQsC2tpaIBuJQBfJSUIBCwoRztkVEwcPAQyDgAmPgBGXkQivgBmLmkYxAB6Bt8Kwq5k1LhjNH5jOBEvOqSUsDTEACNMlDNc2HyVCpK+YsQangXK1b4ATl4NgBZl0uPEJdX2usbm+1bq9pGsLp6+gfG6oA)
  * 
- * This function was taken from [youmightnotneed.com/lodash/#intersection](https://youmightnotneed.com/lodash/#intersection) and written in TypeScript.
+ * *Refactored version of [youmightnotneed.com/lodash/#intersection](https://youmightnotneed.com/lodash/#intersection) and written in TypeScript.*
  */
 export function intersection<T>(firstArray: T[], ...arrays: T[][]): T[] {
   return firstArray.filter(item => arrays.every(arr => arr.includes(item)));
