@@ -13,4 +13,3 @@ export function times(
   }
   return Array.from({ length }).map(nummeratorWrap(nummerator));
 }
-
