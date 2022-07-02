@@ -17,6 +17,6 @@
  * 
  * This function was taken from [youmightnotneed.com/lodash/#intersection](https://youmightnotneed.com/lodash/#intersection) and written in TypeScript.
  */
-export function intersection<T>(firstArray: T[], ...args: T[][]): T[] {
-  return firstArray.filter(item => args.every(arr => arr.includes(item)));
+export function intersection<T>(firstArray: T[], ...arrays: T[][]): T[] {
+  return firstArray.filter(item => arrays.every(arr => arr.includes(item)));
 }
